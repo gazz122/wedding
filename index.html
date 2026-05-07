@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raka & Nadira Wedding</title>
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="m-0 p-0">
+    <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="flowers"></div>
+
+
+<!-- HERO COVER -->
+<section class="hero-fancy relative min-h-screen text-white overflow-hidden">
+
+    <!-- frame emas -->
+    <div class="absolute inset-0 border-[3px] border-yellow-700/40 pointer-events-none"></div>
+
+    <!-- background -->
+    <img src="images/bg-cover.jpg" class="absolute inset-0 w-full h-full object-cover opacity-40">
+
+    <!-- ornament -->
+    <img src="images/ornament-top.png" class="glow-gold absolute top-6 left-1/2 -translate-x-1/2 w-56 z-20">
+    <img src="images/ornament-left.png" class="glow-gold absolute top-20 left-0 w-44 md:w-60 z-20">
+    <img src="images/ornament-right.png" class="glow-gold absolute top-20 right-0 w-44 md:w-60 z-20">
+
+    <!-- content -->
+    <div class="relative z-30 flex flex-col items-center justify-center min-h-screen text-center px-4">
+
+        <p class="tracking-[4px] text-sm md:text-lg mb-4 text-yellow-200">THE WEDDING OF</p>
+
+       <h1 class="playfair gold-glow text-5xl md:text-8xl text-yellow-400 leading-tight drop-shadow-lg">
+            Raka <br>&<br> Nadira
+        </h1>
+
+        <p class="mt-5 text-lg md:text-2xl text-yellow-200">Dua Budaya, Satu Cinta</p>
+        <p class="text-sm md:text-xl mt-2 text-yellow-300">Pawiwahan Agung & Baralek Gadang</p>
+
+        <button onclick="openInvite()" class="btn-gold mt-10 text-white px-10 py-3 rounded-full">
+            BUKA UNDANGAN
+        </button>
+    </div>
+
+    <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-[#6E1A1A] to-transparent"></div>
+</section>
+<!-- SALAM SECTION -->
+<section id="mainContent" class="bg-[#f8f3ea] text-center px-6 py-16 relative">
+
+    <h2 class="playfair text-[#7b5b2a] text-xl md:text-3xl mb-6">
+        Assalamu'alaikum Warahmatullahi Wabarakatuh
+    </h2>
+
+    <p class="max-w-2xl mx-auto text-gray-700 leading-8 text-sm md:text-lg">
+        وَمِنْ ءَايَٰتِهِۦٓ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَٰجًا لِّتَسْكُنُوٓا۟ إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِى ذَٰلِكَ لَءَايَٰتٍ لِّقَوْمٍ يَتَفَكَّرُونَ
+    </p>
+    <p>
+        Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.
+    </p>
+    <p>AR-RUM 30:21</p>
+</section>
+
+<!-- COUPLE SECTION -->
+<section class="fade-up relative bg-[#f8f3ea] overflow-hidden px-4 md:px-16 py-20">
+
+    <!-- BACKGROUND ORNAMENT -->
+    <div class="absolute inset-0 opacity-[0.06] pointer-events-none">
+
+        <img src="images/batik-pattern.png"
+        class="absolute top-0 left-0 w-full h-full object-cover">
+
+    </div>
+
+    <!-- glow -->
+    <div class="absolute top-20 left-1/2 -translate-x-1/2
+    w-[500px] h-[500px]
+    bg-yellow-200/20 blur-[140px] rounded-full"></div>
+
+    <!-- title -->
+    <div class="relative z-10 text-center mb-16">
+
+        <p class="tracking-[4px] text-[#8b6b35] text-sm mb-3">
+            THE BRIDE & GROOM
+        </p>
+
+        <h2 class="playfair text-4xl md:text-6xl text-[#6E1A1A]">
+            Raka & Nadira
+        </h2>
+
+        <div class="divider-gold"></div>
+
+    </div>
+
+    <!-- couple -->
+    <div class="relative z-10 grid md:grid-cols-2 gap-14 items-end">
+
+        <!-- GROOM -->
+<div class="text-center relative">
+
+    <div class="relative inline-block">
+
+        <!-- glow -->
+        <div class="absolute inset-0
+        bg-yellow-200/20 blur-3xl rounded-full scale-110">
+        </div>
+
+        
+        <!-- FOTO -->
+        <div class="relative z-10 overflow-hidden rounded-[40px]">
+
+            <img src="images/groom.png"
+            class="w-72 md:w-96 object-cover">
+        </div>
+
+    </div>
+
+    <!-- NAME -->
+    <div class="mt-8">
+
+        <h2 class="greatvibes text-5xl text-[#7b5b2a]">
+            Raka
+        </h2>
+
+        <p class="mt-4 text-gray-700 leading-8">
+            Putra dari <br>
+            Bapak Haryanto <br>
+            & Ibu Sri Lestari
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- BRIDE -->
+<div class="text-center relative">
+
+    <div class="relative inline-block w-[320px] md:w-[430px]">
+
+    <!-- glow -->
+    <div class="absolute inset-0
+    bg-yellow-200/20 blur-3xl rounded-full scale-110">
+    </div>
+
+    <!-- FOTO -->
+    <div class="absolute inset-[11%] z-10 overflow-hidden rounded-[30px]">
+
+        <img src="images/bride.png"
+        class="w-full h-full object-cover">
+    </div>
+
+</div>
+
+    <!-- NAME -->
+    <div class="mt-8">
+
+        <h2 class="greatvibes text-5xl text-[#7b5b2a]">
+            Nadira
+        </h2>
+
+        <p class="mt-4 text-gray-700 leading-8">
+            Putri dari <br>
+            Bapak Zulkarnain <br>
+            & Ibu Yuliana
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- COUNTDOWN -->
+<section class="fade-up countdown-bg text-yellow-300 py-8 px-4">
+    <h3 class="text-center mb-5 tracking-[3px]">MENUJU HARI BAHAGIA</h3>
+
+    <div class="grid grid-cols-4 gap-3 max-w-3xl mx-auto text-center">
+        <div>
+            <h1 id="days" class="playfair text-3xl md:text-5xl">60</h1>
+            <p class="text-xs md:text-base">Hari</p>
+        </div>
+        <div>
+            <h1 id="hours" class="playfair text-3xl md:text-5xl">08</h1>
+            <p class="text-xs md:text-base">Jam</p>
+        </div>
+        <div>
+            <h1 id="minutes" class="playfair text-3xl md:text-5xl">34</h1>
+            <p class="text-xs md:text-base">Menit</p>
+        </div>
+        <div>
+            <h1 id="seconds" class="playfair text-3xl md:text-5xl">56</h1>
+            <p class="text-xs md:text-base">Detik</p>
+        </div>
+    </div>
+</section>
+<!-- MENU CARDS -->
+<section class="bg-[#f8f3ea] px-4 md:px-10 py-12">
+
+    <div class="grid md:grid-cols-4 gap-6">
+
+        <!-- OUR STORY -->
+        <div class="bg-white rounded-3xl shadow-lg p-5 text-center border border-yellow-100">
+            <div class="bg-[#6E1A1A] text-yellow-300 rounded-full inline-block px-5 py-1 text-xs mb-4">OUR STORY</div>
+            <h2 class="playfair text-[#7b5b2a] text-2xl mb-4">Dua Budaya<br>Satu Cinta</h2>
+            <p class="text-sm text-gray-600 leading-7">
+                Berawal dari pertemuan dua hati dari budaya yang berbeda,
+                kami dipertemukan untuk menjadi satu dalam cinta,
+                keyakinan dan ridho-Nya.
+            </p>
+            <img src="images/gallery1.png" class="mt-5 rounded-2xl">
+        </div>
+
+        <!-- ACARA -->
+        <div class="bg-white rounded-3xl shadow-lg p-5 text-center border border-yellow-100">
+            <div class="bg-[#6E1A1A] text-yellow-300 rounded-full inline-block px-5 py-1 text-xs mb-4">ACARA</div>
+            <h2 class="playfair text-[#7b5b2a] text-2xl mb-5">Rangkaian Acara</h2>
+
+            <div class="space-y-5 text-sm text-gray-700">
+                <div>
+                    <p class="font-semibold">Akad Nikah</p>
+                    <p>08.00 WIB</p>
+                </div>
+                <div>
+                    <p class="font-semibold">Resepsi</p>
+                    <p>10.00 WIB - 14.00 WIB</p>
+                </div>
+                <div>
+                    <p class="font-semibold">Ngunduh Mantu</p>
+                    <p>19.00 WIB</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- GALERI -->
+        <div class="bg-white rounded-3xl shadow-lg p-5 text-center border border-yellow-100">
+            <div class="bg-[#6E1A1A] text-yellow-300 rounded-full inline-block px-5 py-1 text-xs mb-4">GALERI</div>
+            <h2 class="playfair text-[#7b5b2a] text-2xl mb-4">Galeri Kami</h2>
+
+            <div class="grid grid-cols-2 gap-2">
+                <img src="images/gallery1.png" class="rounded-xl">
+                <img src="images/gallery2.png" class="rounded-xl">
+                <img src="images/gallery3.png" class="rounded-xl">
+                <img src="images/gallery4.png" class="rounded-xl">
+            </div>
+
+            <button class="mt-4 bg-[#6E1A1A] text-white px-5 py-2 rounded-full text-sm">LIHAT SEMUA FOTO</button>
+        </div>
+
+        <!-- LOKASI -->
+        <div class="bg-white rounded-3xl shadow-lg p-5 text-center border border-yellow-100">
+            <div class="bg-[#6E1A1A] text-yellow-300 rounded-full inline-block px-5 py-1 text-xs mb-4">LOKASI</div>
+            <h2 class="playfair text-[#7b5b2a] text-2xl mb-3">Lokasi Acara</h2>
+
+            <p class="text-sm text-gray-600 mb-4">
+               Resto Boros Boemboe, seberangnya Mall Transpark Juanda, Jl. Insinyur H. Juanda No.81 Blok A 18-22, RT.002/RW.010, Duren Jaya, Bekasi Timur, Bekasi, West Java 17111
+            </p>
+
+            <img src="images/maps.png" class="rounded-xl mb-4">
+
+            <a href="https://maps.app.goo.gl/tUccUHAjEZ7Z5zEH9" target="_blank" class="bg-[#6E1A1A] text-white px-5 py-2 rounded-full text-sm inline-block">
+    BUKA DI GOOGLE MAPS
+            </a>
+        </div>
+    </div>
+</section>
+<!-- REKENING -->
+<section class="bg-[#f8f3ea] py-10 px-4 text-center">
+    <h2 class="playfair text-3xl text-[#7b5b2a] mb-6">Wedding Gift</h2>
+
+    <div class="max-w-xl mx-auto space-y-4">
+        <div class="bg-white shadow rounded-2xl p-5">
+            <p class="font-semibold">Bank BCA</p>
+            <p id="rek1" class="text-xl text-[#6E1A1A]">1234567890</p>
+            <p>a.n Raka Pratama</p>
+            <button onclick="copyRek('rek1')" class="mt-3 bg-[#6E1A1A] text-white px-5 py-2 rounded-full">COPY</button>
+        </div>
+
+        <div class="bg-white shadow rounded-2xl p-5">
+            <p class="font-semibold">DANA</p>
+            <p id="rek2" class="text-xl text-[#6E1A1A]">081234567890</p>
+            <p>a.n Nadira Azzahra</p>
+            <button onclick="copyRek('rek2')" class="mt-3 bg-[#6E1A1A] text-white px-5 py-2 rounded-full">COPY</button>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#6E1A1A] text-yellow-300 text-center py-10 px-4">
+    <h2 class="playfair text-3xl mb-4">TERIMA KASIH</h2>
+    <p class="max-w-2xl mx-auto leading-8 text-sm md:text-base">
+        Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
+        Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.
+    </p>
+    <p class="mt-4">Wassalamu'alaikum Warahmatullahi Wabarakatuh</p>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
