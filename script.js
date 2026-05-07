@@ -29,24 +29,54 @@ function openInvite(){
 
 }
 
-document.addEventListener("visibilitychange", async () => {
 
-    const music = document.getElementById("bgMusic");
+/* ===== MUSIC CONTROL ===== */
+
+const music = document.getElementById('bgMusic');
+
+function stopMusic(){
+
+    music.pause();
+
+}
+
+async function playMusic(){
+
+    try{
+
+        await music.play();
+
+    }catch(err){}
+
+}
+
+/* desktop + mobile */
+document.addEventListener("visibilitychange",()=>{
 
     if(document.hidden){
 
-        music.pause();
+        stopMusic();
 
     }else{
 
-        try{
-            await music.play();
-        }catch(err){}
+        playMusic();
+
     }
 
 });
 
-/* COUNTDOWN */
+/* keluar browser/app HP */
+window.addEventListener("blur",stopMusic);
+
+/* safari ios */
+window.addEventListener("pagehide",stopMusic);
+
+/* balik lagi */
+window.addEventListener("focus",playMusic);
+
+
+/* ===== COUNTDOWN ===== */
+
 const targetDate =
 new Date("2026-07-03T15:00:00+07:00").getTime();
 
@@ -70,7 +100,9 @@ setInterval(()=>{
 
 },1000);
 
-/* COPY REKENING */
+
+/* ===== COPY REKENING ===== */
+
 function copyRek(id){
 
     const rek =
@@ -82,7 +114,9 @@ function copyRek(id){
 
 }
 
-/* ANIMATION */
+
+/* ===== SCROLL ANIMATION ===== */
+
 const observer =
 new IntersectionObserver(entries=>{
 
@@ -105,7 +139,9 @@ document.querySelectorAll('.fade-up')
 
 });
 
-/* PARALLAX */
+
+/* ===== PARALLAX ===== */
+
 window.addEventListener('scroll',()=>{
 
     const hero =
@@ -115,6 +151,9 @@ window.addEventListener('scroll',()=>{
     window.scrollY * 0.4 + 'px';
 
 });
+
+
+/* ===== FLOWERS ===== */
 
 const flowers = document.querySelector('.flowers');
 
@@ -138,4 +177,5 @@ for(let i=0;i<15;i++){
     Math.random()*0.5 + 0.4;
 
     flowers.appendChild(flower);
+
 }
