@@ -29,6 +29,23 @@ function openInvite(){
 
 }
 
+document.addEventListener("visibilitychange", async () => {
+
+    const music = document.getElementById("bgMusic");
+
+    if(document.hidden){
+
+        music.pause();
+
+    }else{
+
+        try{
+            await music.play();
+        }catch(err){}
+    }
+
+});
+
 /* COUNTDOWN */
 const targetDate =
 new Date("2026-07-03T15:00:00+07:00").getTime();
